@@ -29,7 +29,7 @@ public class TC_01 extends capability{
 	public void killAllProcess() throws IOException, InterruptedException
 	{
 		//i am ensuring before any of my test starts if the appium server is up and running
-		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
+		Runtime.getRuntime().exec("taskkill /F /IM node.exe"); //command for killing running node
 		Thread.sleep(5000);
 	}
 	
@@ -42,7 +42,7 @@ public class TC_01 extends capability{
 		//This is starting my appium server
 		service = startServer();
 		//what is the benifit of using implicity wait
-		AndroidDriver<AndroidElement> driver = HybridCapability(apppackage, appactivity, deviceName, chromeexcutable);
+		AndroidDriver<AndroidElement> driver = HybridCapability(apppackage, appactivity, deviceName,platformName, chromeexcutable);
 		//is to implement implicitwait 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
@@ -110,14 +110,14 @@ public class TC_01 extends capability{
 				 driver.context("WEBVIEW_com.androidsample.generalstore");
 				 Thread.sleep(5000);
 				 driver.findElement(By.xpath("//*[@name='q']")).sendKeys("swiggy");
-				 driver.findElement(By.xpath("//*[@name='q']")).sendKeys(Keys.RETURN);
+				 driver.findElement(By.xpath("//*[@name='q']")).sendKeys(Keys.RETURN);//
 				 driver.pressKey(new KeyEvent(AndroidKey.BACK));
 				 //or 
 				// driver.navigate().back();
 				 //switch back to my Native app
 				 driver.context("NATIVE_APP");
 				 //this is stooping my appium server
-				service.stop();
+				service.stop();//stop the server
 	}
 
 

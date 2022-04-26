@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74417" started-at="2020-11-30T05:40:15Z" finished-at="2020-11-30T05:41:29Z">
+  <suite name="Default suite" duration-ms="96121" started-at="2022-04-26T13:59:23 IST" finished-at="2022-04-26T14:00:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74417" started-at="2020-11-30T05:40:15Z" finished-at="2020-11-30T05:41:29Z">
+    <test name="Default test" duration-ms="96121" started-at="2022-04-26T13:59:23 IST" finished-at="2022-04-26T14:00:59 IST">
       <class name="practise.AppiumFramework.TC_01">
-        <test-method status="PASS" signature="killAllProcess()[pri:0, instance:practise.AppiumFramework.TC_01@128c152]" name="killAllProcess" is-config="true" duration-ms="5023" started-at="2020-11-30T11:10:15Z" finished-at="2020-11-30T11:10:20Z">
+        <test-method status="PASS" signature="killAllProcess()[pri:0, instance:practise.AppiumFramework.TC_01@2fd66ad3]" name="killAllProcess" is-config="true" duration-ms="5060" started-at="2022-04-26T13:59:23 IST" finished-at="2022-04-26T13:59:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killAllProcess -->
-        <test-method status="PASS" signature="tc1()[pri:0, instance:practise.AppiumFramework.TC_01@128c152]" name="tc1" duration-ms="69365" started-at="2020-11-30T11:10:20Z" finished-at="2020-11-30T11:11:29Z">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:practise.AppiumFramework.TC_01@2fd66ad3]" name="tc1" duration-ms="90947" started-at="2022-04-26T13:59:28 IST" finished-at="2022-04-26T14:00:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->

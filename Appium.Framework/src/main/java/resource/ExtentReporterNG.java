@@ -27,7 +27,7 @@ package resource;
 	 
 	    public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 	    	
-	        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\Reports\\htmlreport.html");
+	        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\Reports\\htmlreport_Shivani.html");
 	       extent = new ExtentReports();
 	        
 	        extent.attachReporter(htmlReporter);
